@@ -9,6 +9,10 @@ Vue.config.productionTip = false
 import './assets/css/global.less'
 import '../static/font-awesome-4.7.0/css/font-awesome.min.css'
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
