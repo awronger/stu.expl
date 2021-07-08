@@ -12,7 +12,7 @@
           <el-checkbox v-model="checked.account">account</el-checkbox>
           <el-checkbox v-model="checked.password">password</el-checkbox>
         </div>
-        <new-button class="mg-t-md" text='Login'></new-button>
+        <new-button class="mg-t-md" text='Login' @onHandle='login'></new-button>
       </div>
     </div>
   </div>

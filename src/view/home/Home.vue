@@ -1,9 +1,6 @@
 <template>
   <div class="content home flex-r-c-c">
-    <div>
-      <icon-input :front='true' :back='true' frontIconClass='fa-user'></icon-input>
-      <pwd-input class="mg-t-sm"></pwd-input>
-    </div>
+    Home
   </div>
 </template>
 

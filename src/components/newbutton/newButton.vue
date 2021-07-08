@@ -1,5 +1,5 @@
 <template>
-  <div class="new-button" :style="getStyle">
+  <div class="new-button mouse-pointer" :style="getStyle" @click="handle">
       <span>{{text}}</span>
   </div>
 </template>
@@ -28,6 +28,11 @@ export default {
               'color': this.color,
               'background-color': this.bgColor
           }
+      }
+  },
+  methods:{
+      handle(){
+          this.$emit('onHandle')
       }
   }
 };

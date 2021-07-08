@@ -23,11 +23,12 @@ const newRouter = new Router({
 let session = {}//登录session信息，判断登录状态
 
 newRouter.beforeEach((to, from, next) => {
-  if (session.name === undefined && to.name != 'Login') {
-    next({ name: 'Login' })
-  } else {
-    next()
-  }
+  // if (session.name === undefined && to.name != 'Login') {
+  //   next({ name: 'Login' })
+  // } else {
+  //   next()
+  // }
+  next()
 })
 
 export default newRouter
