@@ -13,18 +13,18 @@ export default new Vuex.Store({
     plugins: [
         persistedState({
             storage: sessionStorage,
-            reducer(val) {
-                return {
-                    loginStore: {}
-                }
-            }
+            // reducer(val) {
+            //     return {
+            //         loginStore: {
+            //             userinfo: val.userinfo,
+            //         }
+            //     }
+            // }
         }), persistedState({
             storage: localStorage,
             reducer(val) {
                 return {
-                    loginStore: {
-                        userinfo: val.loginStore.userinfo,                   
-                    }
+                    userinfo: val.userinfo,                   
                 }
             }
         })],

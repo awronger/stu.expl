@@ -3,7 +3,8 @@ export default {
     state: {
         userInfo:{
             account:'',
-            password:''
+            password:'',
+            token:''
         }
     },
     getters,
@@ -13,6 +14,9 @@ export default {
         },
         SET_PASSWORD(state,payload){
             state.userInfo.password = payload
+        },
+        SET_TOKEN(state,payload){
+            state.userInfo.token = payload
         }
     },
     actions: {
@@ -21,6 +25,9 @@ export default {
         },
         setPassword(context,param){
             context.commit('SET_PASSWORD',param)
+        },
+        setToken(context,param){
+            context.commit('SET_TOKEN',param)
         }
     },
 }
